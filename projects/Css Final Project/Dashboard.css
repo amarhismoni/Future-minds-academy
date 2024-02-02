@@ -6,6 +6,12 @@
 .font-weight-300 {
     font-weight: 300;
 }
+.font-weight-400 {
+    font-weight: 400;
+}
+.font-weight-500 {
+    font-weight: 500;
+}
 .d-flex {
     display: flex;
 }
@@ -246,20 +252,16 @@ section:not(.card) .right {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    grid-template-rows: 500px;
-}
-.hotel-cards {
-    margin-top: 40px;
-    background-color: white;
-    position: relative;
+    margin-top: 60px;
 }
 .hotel-cards figure {
-    position: absolute;
-    top: -20px;
-    left: 15px;
-    right: 15px;
+    transform: translateY(-30px);
 }
-.card-visual{
+.card-visual {
     width: 100%;
     border-radius: 5px;
+    transition: transform 300ms ease-in-out;
+}
+.hotel-cards figure:hover .card-visual {
+    transform: translateY(-30px);
 }
