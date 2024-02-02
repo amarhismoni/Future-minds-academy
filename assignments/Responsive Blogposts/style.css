@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.d-flex {
+    display: flex;
+}
+.flex-direction-column {
+    flex-direction: column;
+}
+.align-items-end {
+    align-items: end;
+}
+.margin-30y {
+    margin-top: 30px;
+}
+a {
+    text-decoration: none;
+    color: rgb(84, 138, 255);
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+aside {
+    background-color: rgb(63, 72, 94);
+    justify-content: center;
+    color: white;
+    padding: 0 30px 0 60px;
+    flex-direction: column;
+    align-items: end;
+}
+aside h1{
+    flex-direction: column;
+    align-items: end;
+}
+h3 {
+    font-weight: 300;
+    flex-direction: column;
+    align-items: end;
+    color: rgb(161, 167, 182);
+}
+button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 15px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+main {
+    padding: 50px;
+}
+p {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(179, 179, 179);
+}
+hr {
+    margin-bottom: 30px;
+    opacity: 0.3;
+}
+h1 {
+    margin: 3px;
+    font-size: 30px;
+}
+.category {
+    color: white;
+    padding: 2px 7px;
+    font-size: 11px;
+}
+.post-header {
+    justify-content: space-between;
+}
+.css {
+    background-color: rgb(49, 209, 62);
+}
+.html {
+    background-color: rgb(95, 95, 255);
+}
+.js {
+    background-color: rgb(243, 24, 115);
+}
+.poster-picture {
+    width: 50px;
+    border-radius: 50%;
+}
+.post-description {
+    margin: 20px 0;
+}
+.post-description p {
+    color: black;
+    font-size: 15px;
+    line-height: 27px;
+}
+
+@media (max-width: 1000px){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr 1fr;
+    }
+    aside{
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+    }
+    aside h1{
+        flex-direction: row;
+    }
+    aside h3{
+        flex-direction: row;
+    }
+    span{
+        margin: 0 5px;
+    }
+    main{
+        padding: 60px 30px;
+    }
+}

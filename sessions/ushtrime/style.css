@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+}
+button{
+    animation: color-change 2s ease forwards;
+    width: 10vw;
+    height: 20px;
+    background-color: red;
+}
+
+@keyframes color-change{
+    from{
+        background-color: red;
+    }
+    to{
+        background-color: yellow;
+    }
+}
+.drop-down{
+    display: none;
+}
+.container:hover .drop-down{
+    display: inline;
+    background-color: blue;
+}
+.drop-down-div{
+    padding: 15px;
+}
+.drop-down-div:hover{
+    background-color: red;
+}
