@@ -12,6 +12,9 @@
 .font-weight-500 {
     font-weight: 500;
 }
+.gap1 {
+    gap: 1rem;
+}
 .d-flex {
     display: flex;
 }
@@ -24,6 +27,9 @@
 .d-grid {
     display: grid;
 }
+.margin-y-1 {
+    margin: 1rem 0;
+}
 h1 {
     font-size: 25px;
 }
@@ -33,6 +39,10 @@ body {
     grid-template-columns: auto 1fr;
     height: 100vh;
     background-color: #ececec;
+    overflow: hidden;
+}
+.overflow-y {
+    overflow-y: scroll;
 }
 
 /* aside */
@@ -45,6 +55,7 @@ aside {
     display: flex;
     flex-direction: column;
     gap: 7px;
+    overflow-y: hidden;
 }
 aside div {
     display: grid;
@@ -73,11 +84,15 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 10px 30px;
+    align-items: center;
 }
 .left {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+.hamburger-menu {
+    display: none;
 }
 .header-button {
     height: 50px;
@@ -254,14 +269,56 @@ section:not(.card) .right {
     gap: 30px;
     margin-top: 60px;
 }
-.hotel-cards figure {
+.hotel-cards {
+    text-align: center;
+}
+.card-visual-container {
     transform: translateY(-30px);
+    position: relative;
 }
 .card-visual {
     width: 100%;
     border-radius: 5px;
     transition: transform 300ms ease-in-out;
 }
+
 .hotel-cards figure:hover .card-visual {
     transform: translateY(-30px);
+}
+.under-card-visual {
+    position: absolute;
+    bottom: 5px;
+    gap: 20px;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* footer */
+footer {
+    padding: 10px 30px;
+}
+.footer-navigation {
+    font-weight: 700;
+}
+
+/* tablet */
+@media (max-width: 1000px) {
+    aside {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+    }
+    header .right {
+        display: none;
+    }
+    .card-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .grid-hotel {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
 }

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Dashboard</title>
         <!-- style -->
         <link rel="stylesheet" href="Dashboard.css" />
     </head>
@@ -106,7 +106,7 @@
                 </figure>
             </div>
         </aside>
-        <div>
+        <div class="overflow-y">
             <header>
                 <div class="left">
                     <figure class="header-button" title="See more">
@@ -114,6 +114,9 @@
                     </figure>
                     <h1 class="font-weight-300">Dashboard</h1>
                 </div>
+                <figure class="hamburger-menu" title="Menu">
+                    <img src="assets/icons/header/HamburgerMenu.svg" alt="" />
+                </figure>
                 <div class="right">
                     <form action="" class="d-flex">
                         <input type="text" id="search" placeholder="Search" />
@@ -316,27 +319,93 @@
                 </section>
                 <section>
                     <h1 class="font-weight-500">Manage Listing</h1>
-                    <div class="grid-hotel">
+                    <article class="grid-hotel">
                         <div class="hotel-cards card">
-                            <figure>
+                            <figure class="card-visual-container">
                                 <img src="assets/images/card-1.jpeg" alt="" class="card-visual" />
+                                <figure class="d-flex under-card-visual">
+                                    <img src="assets/icons/cards/view.svg" alt="" />
+                                    <img src="assets/icons/cards/edit.svg" alt="" />
+                                    <img src="assets/icons/cards/delete.svg" alt="" />
+                                </figure>
                             </figure>
-                            <h3 class="font-weight-400">Cozy 5 Star Apartament</h3>
+                            <h1 class="font-weight-400">Cozy 5 stars Apartament</h1>
+                            <p class="margin-y-1">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique earum nostrum a ipsa perspiciatis dolore minima necessitatibus, voluptates commodi maxime at sint.
+                            </p>
+                            <hr />
+                            <div class="d-flex justify-content-space-between">
+                                <h3>$899/night</h3>
+                                <div class="d-flex">
+                                    <figure>
+                                        <img src="assets/icons/cards/location.svg" alt="" />
+                                    </figure>
+                                    <p>Barcelona, Spain</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="hotel-cards card">
-                            <figure>
+                            <figure class="card-visual-container">
                                 <img src="assets/images/card-2.jpeg" alt="" class="card-visual" />
+                                <figure class="d-flex under-card-visual">
+                                    <img src="assets/icons/cards/view.svg" alt="" />
+                                    <img src="assets/icons/cards/edit.svg" alt="" />
+                                    <img src="assets/icons/cards/delete.svg" alt="" />
+                                </figure>
                             </figure>
+                            <h1 class="font-weight-400">Office Studio</h1>
+                            <p class="margin-y-1">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique earum nostrum a ipsa perspiciatis dolore minima necessitatibus, voluptates commodi maxime at sint.
+                            </p>
+                            <hr />
+                            <div class="d-flex justify-content-space-between">
+                                <h3>1.119/night</h3>
+                                <div class="d-flex">
+                                    <figure>
+                                        <img src="assets/icons/cards/location.svg" alt="" />
+                                    </figure>
+                                    <p>London, UK</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="hotel-cards card">
-                            <figure>
+                            <figure class="card-visual-container">
                                 <img src="assets/images/card-3.jpeg" alt="" class="card-visual" />
+                                <figure class="d-flex under-card-visual">
+                                    <img src="assets/icons/cards/view.svg" alt="" />
+                                    <img src="assets/icons/cards/edit.svg" alt="" />
+                                    <img src="assets/icons/cards/delete.svg" alt="" />
+                                </figure>
                             </figure>
+                            <h1 class="font-weight-400">Beautiful Castle</h1>
+                            <p class="margin-y-1">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique earum nostrum a ipsa perspiciatis dolore minima necessitatibus, voluptates commodi maxime at sint.
+                            </p>
+                            <hr />
+                            <div class="d-flex justify-content-space-between">
+                                <h3>$459/night</h3>
+                                <div class="d-flex">
+                                    <figure>
+                                        <img src="assets/icons/cards/location.svg" alt="" />
+                                    </figure>
+                                    <p>Milan, Italy</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </article>
                 </section>
             </main>
-            <footer></footer>
+            <footer class="d-flex justify-content-space-between">
+                <div class="d-flex gap1">
+                    <p class="footer-navigation">HOME</p>
+                    <p class="footer-navigation">COMPANY</p>
+                    <p class="footer-navigation">PORTFOLIO</p>
+                    <p class="footer-navigation">BLOG</p>
+                </div>
+                <div>
+                    <p>© John Doe 2023</p>
+                </div>
+            </footer>
         </div>
     </body>
 </html>
