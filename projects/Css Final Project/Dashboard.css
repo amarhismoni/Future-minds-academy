@@ -15,8 +15,14 @@
 .gap1 {
     gap: 1rem;
 }
+.cursor-pointer{
+    cursor: pointer;
+}
 .d-flex {
     display: flex;
+}
+.align-items-center{
+    align-items: center;
 }
 .justify-content-center {
     justify-content: center;
@@ -35,7 +41,6 @@ h1 {
 }
 body {
     font-family: "Roboto", sans-serif;
-    display: grid;
     grid-template-columns: auto 1fr;
     height: 100vh;
     background-color: #ececec;
@@ -52,17 +57,14 @@ aside {
     background-image: url(./assets/images/sidebar-1.jpg);
     background-color: rgba(0, 0, 0, 0.8);
     background-blend-mode: color;
-    display: flex;
     flex-direction: column;
     gap: 7px;
     overflow-y: hidden;
 }
 aside div {
-    display: grid;
     grid-template-columns: 40px 1fr auto;
     gap: 20px;
     padding: 10px 15px;
-    align-items: center;
     border-radius: 4px;
 }
 aside div:hover:not(.active, .title, .account) {
@@ -81,15 +83,7 @@ figure {
 
 /* header */
 header {
-    display: flex;
-    justify-content: space-between;
     padding: 10px 30px;
-    align-items: center;
-}
-.left {
-    display: flex;
-    align-items: center;
-    gap: 20px;
 }
 .hamburger-menu {
     display: none;
@@ -97,21 +91,17 @@ header {
 .header-button {
     height: 50px;
     width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: white;
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: box-shadow 300ms ease;
-    cursor: pointer;
+
 }
 .header-button:hover {
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
-.right {
-    display: flex;
-    align-items: center;
+.right{
+    gap: 2rem;
 }
 input {
     background-color: transparent;
@@ -126,10 +116,6 @@ input:focus {
     border: none;
     border-bottom: 3px solid darkmagenta;
 }
-.icon {
-    margin: 0 20px;
-    cursor: pointer;
-}
 .notifications {
     position: relative;
 }
@@ -139,9 +125,7 @@ input:focus {
     right: -6px;
     width: 18px;
     height: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    place-items: center;
     background-color: red;
     border: 1px solid white;
     color: white;
@@ -155,9 +139,6 @@ input:focus {
     position: absolute;
     left: -260px;
     top: 0;
-    display: grid;
-    grid-template-rows: repeat(5, 1fr);
-    row-gap: 5px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
@@ -195,7 +176,6 @@ main {
 .card-header-icon {
     width: 80px;
     height: 80px;
-    display: grid;
     place-items: center;
     position: relative;
     top: -20px;
@@ -204,16 +184,10 @@ main {
     box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
 }
 .card-content {
-    display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 30px;
 }
-.card-content-left {
-    display: flex;
-    flex-direction: column;
-}
 .places {
-    display: grid;
     grid-template-columns: 1fr auto auto;
     gap: 30px;
     align-items: center;
@@ -241,11 +215,12 @@ section:not(.card) {
     grid-template-rows: 1fr 1fr;
     gap: 50px;
 }
+.card-warnings {
+    gap: 10px;
+    align-items: center;
+}
 figure {
     width: fit-content;
-}
-section:not(.card) .card .card-content {
-    display: flex;
 }
 section:not(.card) .card {
     gap: 15px;
@@ -288,7 +263,6 @@ section:not(.card) .right {
 .under-card-visual {
     position: absolute;
     bottom: 5px;
-    gap: 20px;
     z-index: -1;
     left: 50%;
     transform: translateX(-50%);
@@ -320,5 +294,11 @@ footer {
     .grid-hotel {
         grid-template-columns: 1fr;
         gap: 60px;
+    }
+}
+@media (max-width: 560px) {
+    section:not(.card) {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
 }
