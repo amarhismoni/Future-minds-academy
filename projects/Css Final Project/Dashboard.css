@@ -15,13 +15,13 @@
 .gap1 {
     gap: 1rem;
 }
-.cursor-pointer{
+.cursor-pointer {
     cursor: pointer;
 }
 .d-flex {
     display: flex;
 }
-.align-items-center{
+.align-items-center {
     align-items: center;
 }
 .justify-content-center {
@@ -54,6 +54,7 @@ body {
 aside {
     padding: 20px 10px;
     color: white;
+    display: flex;
     background-image: url(./assets/images/sidebar-1.jpg);
     background-color: rgba(0, 0, 0, 0.8);
     background-blend-mode: color;
@@ -95,12 +96,11 @@ header {
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: box-shadow 300ms ease;
-
 }
 .header-button:hover {
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
-.right{
+.right {
     gap: 2rem;
 }
 input {
@@ -216,7 +216,7 @@ section:not(.card) {
     gap: 50px;
 }
 .card-warnings {
-    gap: 10px;
+    gap: 20px;
     align-items: center;
 }
 figure {
@@ -228,6 +228,7 @@ section:not(.card) .card {
 }
 section:not(.card) .right {
     flex-direction: column;
+    gap: 10px;
 }
 .orange {
     background-image: linear-gradient(45deg, rgb(237, 108, 10), rgb(238, 136, 34));
@@ -292,6 +293,7 @@ footer {
         grid-template-rows: 1fr 1fr;
     }
     .grid-hotel {
+        padding: 0 50px;
         grid-template-columns: 1fr;
         gap: 60px;
     }
@@ -300,5 +302,8 @@ footer {
     section:not(.card) {
         grid-template-columns: 1fr;
         gap: 40px;
+    }
+    .grid-hotel {
+        padding: 0 10px;
     }
 }
