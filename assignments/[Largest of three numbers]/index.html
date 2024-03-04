@@ -1,0 +1,23 @@
+\<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let numberOne = parseFloat(prompt("Enter in a number:"));
+            let numberTwo = parseFloat(prompt("Enter in another number:"));
+            let numberThree = parseFloat(prompt("Enter in another number:"));
+
+            if (numberOne > (numberTwo && numberThree)) {
+                console.log(numberOne);
+            } else if (numberTwo > (numberOne && numberThree)) {
+                console.log(numberTwo)
+            } else {
+                console.log(numberThree);
+            }
+        </script>
+    </body>
+</html>
