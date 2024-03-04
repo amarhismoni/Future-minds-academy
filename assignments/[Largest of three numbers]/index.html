@@ -10,14 +10,17 @@
             let numberOne = parseFloat(prompt("Enter in a number:"));
             let numberTwo = parseFloat(prompt("Enter in another number:"));
             let numberThree = parseFloat(prompt("Enter in another number:"));
+            let largestNumber;
 
             if (numberOne > (numberTwo && numberThree)) {
-                console.log(numberOne);
+                largestNumber = numberOne;
             } else if (numberTwo > (numberOne && numberThree)) {
-                console.log(numberTwo)
+                largestNumber = numberTwo;
             } else {
-                console.log(numberThree);
+                largestNumber = numberThree;
             }
+
+            console.log(largestNumber);
         </script>
     </body>
 </html>
