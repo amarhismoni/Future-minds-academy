@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // let counter = 1;
+            // while (counter <= 100) {
+            //     console.log(counter);
+            //     counter++;
+            // }
+            // let userNumber = parseInt(prompt("Shkruani nje numer:"));
+            // let counter = 1;
+            // while (counter <= userNumber) {
+            //     console.log(counter);
+            //     counter++;
+            // }
+
+            // counter = 0;
+            // while (counter <= 100) {
+            //     console.log(counter);
+            //     counter += 2;
+            // }
+            // let counter = 1;
+            // let result = 1;
+            // while (counter <= 100) {
+            //     result *= counter;
+            //     counter++;
+            // }
+            // console.log(counter);
+            // let userInput = parseInt(prompt("Shkruani nje numer:"));
+            // let sum = 0;
+            // while (userInput !== 0) {
+            //     sum += userInput;
+            //     userInput = parseInt(prompt("Shkruani edhe nje numer:"));
+            // }
+            // alert(sum);
+            let random = Math.floor(Math.random() * 6) + 1;
+            let userInput;
+            let counter = 0;
+            do {
+                userInput = parseInt(prompt("Qelloni numrin prej 1 - 6"));
+                counter++;
+            } while (userInput !== random);
+            if (counter === 1) {
+                alert(`The correct number was ${random} and you got it in ${counter} try`);
+            } else {
+                alert(`The correct number was ${random} and you got it in ${counter} tries`);
+            }
+        </script>
+    </body>
+</html>

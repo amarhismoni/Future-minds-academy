@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let userInput = parseInt(prompt("Shkruani nje numer:"));
+            let sum = 0;
+            while (userInput !== 0) {
+                sum += userInput;
+                userInput = parseInt(prompt("Shkruani edhe nje numer:"));
+            }
+            console.log(sum)
+        </script>
+    </body>
+</html>

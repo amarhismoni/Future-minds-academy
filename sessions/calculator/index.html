@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let numberOne = parseFloat(prompt("shkruaje nje numer"));
+            let operation = prompt("shkruaje nje operacion");
+            let numberTwo = parseFloat(prompt("shkruaje edhe nje numer"));
+
+            let result;
+            if (operation === "plus") {
+                result = numberOne + numberTwo;
+            } else if (operation === "minus") {
+                result = numberOne - numberTwo;
+            } else if (operation === "here") {
+                result = numberOne * numberTwo;
+            } else if (operation === "pjestim") {
+                if (numberTwo === 0) throw new Error("nuk mund te pjesetosh me zero");
+                result = numberOne / numberTwo;
+            }
+            else if (operation === "modulos") {
+                result = numberOne % numberTwo;
+            } else {
+                throw new Error("nuk ke shkruar nje operacion matematikor");
+            }
+
+            console.log(result);
+        </script>
+    </body>
+</html>
